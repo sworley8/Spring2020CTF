@@ -1,5 +1,5 @@
 # VIPCTF
-CTF done for VIP ESCS
+CTF done for VIP ESCS in Spring 2020 (May 2020 to be specific)
 CTF done for Mircocorruption and Cryptopals
 
 Mircocorruption:
