@@ -1,0 +1,16 @@
+Next up is Cusco.
+So Image 1 is the instruction. In it it says that the makers of the lock realized they hadnt fixed the conditional if the password was too long and have now fixed it.
+First thing I did was check testing_password_valid to see if anything had changed and it hadn't. 
+I checked what the procedure did when I inputted the password in Image 2, and as I went through it as shown in Image 3-5, 
+I realized that testingctf was not seperated from the memory with the instructions in it as shown in Image 6.
+Since testing_password_valid wasn't changed, I put in another password longer than 16 characters as shown in Image 7.
+Image 8 shows that I broke the system, which is great because it meant they fixed nothing.
+So all I had to do was figure out how to force it to go where I wanted and also figure out where I wanted to go. 
+Image 9 is me showing you where I decided to go. 
+The address of it was 4528, so I just put that in as the key and see if it would work as shown in Image 10. 
+Image 11 shows that it did not work and I felt dumb when that happened.
+I literally forgot the endianess, which is shown in Image 12. 
+I put in the correct endianess for the address in Image 14 and Image 15 shows that it jumps to the address I wanted. 
+Lastly Image 16 shows that I cracked the lock and finished the challenege.
+
+
