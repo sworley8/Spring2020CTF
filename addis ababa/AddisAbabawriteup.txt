@@ -1,0 +1,15 @@
+Moving onto the next challenge, which was a different one. So, just to be honest, I got lucky here.
+Image 1 is a lie; they lie in these manuels. I ignore them and their lies.
+Image 2 is where I noticed something interesting; its a printf.
+So obviously I think its weird they programmed printf into assembly so I google printf hack in Image 3.
+Got to learn about the histroy of printf in hacking, which is cool.
+Anyways beyond that I dont read further, because I remember printf has %x and %n and I dont need anything else right?
+Turns out there is %s and %c and all of these commands mean something in assembly, but I was not aware when I did this.
+So in IMage 4, I am looking at what happens after testing_password_valid because testing_password_valid still hasnt changed.
+I input an actual password to see what will happen in Image 5-7.
+But first in Image 6, I look to see what happens before unlocking the door and set break points around it.
+Then I run through. In Image 7-8, I check the stack pointer, since it is moving values from the stack pointer into r15,
+which was odd to me. I read into 3c22 to see what it is doing.
+At the testing line the stack pointer has not changed, so I decide I want to mess with it.
+Image 9 is where I make a mistake. Took an hour to figure it out. The stack pointer is at 3c22, but I had written 3c20 instead, so Image 10 kept happening and I had no clue why. See 3c20 is <space while 3c22 is <" and those are very different. Finally I realize I copied down the wrong memory address and I just kept alternating through different combinations of %x and %n like <"%x%x, <"%n%x, <"%n%n, until I got <"%x%n. Not sure the proper way to do it to be honest. I know I was lucky.
+WHich got me to do Image 12, where I input the correct value and Image 11 occurs.
