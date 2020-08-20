@@ -1,0 +1,4 @@
+Challenge 4 I found to be not much different from 3, so I copied and pasted the code. 
+Then I opened the file and read each line in a for loop. Each line then because a bytearray 
+so that I could properly preform the xor in each part and score each line appropiately. 
+Then I showed the maxium result, which would be the key.

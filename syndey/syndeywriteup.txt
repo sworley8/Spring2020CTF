@@ -1,0 +1,14 @@
+Moving onto the next challenge.
+If you look into Image 1, you will see there is a line that says they found out that 
+people were hacking into the lock because the password was in the memory. 
+So, they removed it from memory, or at least they said they did.
+The first thing I did was check the code and in Image 2, you will see 
+highlighted 3 comparision instructions to r15, which we established in New Orleans is where the password is held.
+Since that is what is compared that must be the password, right?
+Image 3 is telling you what the hex converts to in ascii. 
+However, if you put that ascii in as the password as shown in Image 8. 
+You will see in Image 9-11 that it will output that it is incorrect. That is because of the endianess of the hex.
+The computer reads the hex different than you the user. 
+In Image 7 you see that for each grouping of 4 I change the order as in if the hex was ABCD it would become CDAB for the endianess of the lock. 
+Image 4 enters that corrected version in and Image 5-6 shows that it passes where the previous password would fail.
+So, we finish the Syndey challenge.

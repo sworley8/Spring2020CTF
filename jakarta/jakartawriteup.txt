@@ -1,0 +1,14 @@
+Now we are at the last challenge I did.
+Image 1 is the instructions, which we all know lie.
+Moving on, Image 2 was me figuring out where the door was at address 4442. 
+So then I noticed that protocol calls strcpy before asking for a password, which is interesting in Image 3; 
+it also does login and strcpy before verify that it is valid as shown in Image 4. 
+It also asks for me to make sure both username and password are 32 characters long when put together. 
+Great way to tell me that I should break it by not doing that. 
+Image 5 showed me that there is a comparision to see if the value is more than 32 characters. 
+So I decide to make the username 16 characters and the password to be an insane amount as shown in Images 6-8. 
+I only input the 4442 as the username and password. 
+As I go through it I realize that since Image 5 shows that one of the values must be 32 characters then the other can be as long as I want, so the username ends up being 4442 16 times and the password was more tricky. 
+Image 10 was me testing different amounts to see what would work. 
+Until I realized I needed a really large number something like 100 or more. 
+So I used python to print the amount I wanted, going from 100-112 I would use this call in python and the print it as my password: Print (‘4c44’ * 112). Then I got to Image 11 which was the answer for the password.

@@ -1,0 +1,2 @@
+I just did the xor command in python ^ that I already knew about. 
+It was a fairly easy task that I did in the terminal. I was not sure how they actually wanted me to approach it.

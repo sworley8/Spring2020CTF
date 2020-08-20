@@ -1,0 +1,10 @@
+Moving onto the next challenge.
+
+For once, we did not need to read the instructions in Imgae 1. 
+Firstly, I checked testing_password_valid and found it to be the same. 
+Then I looked at what was occuring in Image 2-3. 
+Image 4 was when I saw that again the password was stored with the instructions. 
+I checked to see in Image 5-6 if the legnth would matter if it was too long 
+and saw in Image 7 that it checked that hex 3e still existed in the memory. 
+I inputted it as well as the hex for unlocking the door which was at address 4446, as shown in Image 8. 
+It did not work so I added 3e3e to see if it needed to be size of 4 and that worked.

@@ -1,0 +1,8 @@
+This one was different than the previous one, so I modified my xor so that it would make sense.
+The first step I did was make the line that I would be using the cypher on and I made the key as well.
+I knew the key and line needed to be bytearrays to properly xor each character, 
+and I knew I had to xor the line with teh key in a repeative fashion to be considered a repeating-key xor.
+So going back to the xor I let it take in the key and line 
+then xor each part of the line with the part of the key that equaled the index%the length of the line.
+Otherwise there was a chance that a section of line would not be xored with the correct part of the key to be able to be a repating key xor.
+Then I converted that into a string to print out the answer.

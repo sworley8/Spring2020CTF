@@ -1,0 +1,13 @@
+Moving right along to the next challenge.
+First I read the instructions that just seem to keep lying to me in Image 1. I have learned not to trust manuels now.
+So to start off in Image 2 I tried a password that is exactly 16 characters to see what would happen. 
+Did not seee anything of interest, so I moved on. 
+But, not before I saw that they did not move the password away from the memory for instructions. 
+I had a felling that I could try something like before.
+I tried a 4 different 4532 with 7f00 at the end, since 7f00 is the interupt command 
+and 4532 is the instruction for interupts and added 4532 at the end to get that to be where I go. 
+In Image 3 you see what it looks like in the memory when I forget to say that it is hex.
+As you can see in Image 4, I was right to think that because the sp is already unlocking the door in that image.
+Once I input that as the password in hex, it works.
+
+

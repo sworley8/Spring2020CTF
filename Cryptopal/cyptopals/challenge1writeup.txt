@@ -1,0 +1,4 @@
+Since I had never done binary operations before in python, I looked up how to change hex to base64. 
+I was aware there was a library called codecs that was commonly used to convert strings into 
+different bases, but I did not know the proper calls for the library. I checked the codecs library's wiki to find it.
+That ended up with the answer I was looking for which is found in challenge1.py.

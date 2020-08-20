@@ -1,0 +1,11 @@
+Now we are moving onto the next challenge.
+As always, Image 1-2 show the changes to the lock. From what I understood the lock now has no true password and must pass a conditional to open.
+First part that I noticed is that the password is required to be between 8-16 characters. 
+Firstly, I test what the system does when the password is correct, which is shown from Images 3-13. 
+I did not get alot of information from it. 
+I looked at testing_password_valid to be sure that is where I could learn the most from assembly code. 
+Overall not helpful with a password that is in the bounds, and a bust trying to figure it out.
+Image 14-15 was me testing to see how the characters lined up when was exactly 16 characters.
+Next I did a password too long like ASDFGHJKLKKHGFDASDFGHJKLLHGFDSA, which is more than 16 characters in Image 16.
+Image 17 shows that we were able to pass the validity. However, in Image 18 we see there is a comparitor that exists.
+So in Image 19, we add the value that was being compared to the end of the 16 characters and are able to pass.

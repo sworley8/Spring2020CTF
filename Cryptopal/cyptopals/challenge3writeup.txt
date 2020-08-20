@@ -1,0 +1,5 @@
+For challenge 3, I was not able to figure out how to 
+properly calculate the frequency of the letters since it was a bit confusing for me.
+I decided to go a different route and use lamba's to score the letters all differently.
+Then after scoring each one, I would use a loop to xor each byte to see for each key what the xor would show.
+Once that was done I printed the answer because that is what they wanted.

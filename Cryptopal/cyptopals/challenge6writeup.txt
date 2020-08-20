@@ -1,0 +1,23 @@
+This challenge was difficult and I did not finish it.
+I was stuck because I did not understand what is was asking or what to do.
+So I looked up what other people said about this problem in the hopes that it would begin to click for me.
+I looked at specifically at a high level what people said they did. 
+The first step is to get the key's size.
+To do this you have to break ciphertext into chunks with length keysize (brute-force). 
+For each keysize, calculate Hamming distance between every 2 chunks of ciphertext.
+You do that by deriving average Hamming distance of the whole ciphertext for that keysize.
+You will know if that works when you find the keysize with lowest average Hamming distance.
+Step 2 is to then get the key.
+First break ciphertext into chunks with length of correct keysize. 
+Then create a block of every first-byte of every chunk 
+(that block would be encrypted with single-byte key XOR.
+This is done by decrypting that block using a single-byte xor cipher to get the key letter
+Then reapeat until the end of the keysize to get the key.
+Now we are onto step 3 which is to get the text formated how we need it and get the result we want.
+Then xor the text with the key to get the result.
+At a high level those are the steps. 
+I was unsure of how to get the hamming_distance so I looked up how that is typically done. 
+I found that is always suming the byte with 1 when you xor one section with another.
+I knew my single-byte xor cipher would probably have to change but I was unsure how.
+I opened the file. I created a basic version of xor. 
+After that I was not sure what to do. That is around the time that I gave up.
