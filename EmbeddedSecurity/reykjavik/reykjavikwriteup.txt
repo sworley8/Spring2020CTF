@@ -1,0 +1,22 @@
+Moving onto the next challenge. 
+So, this was one of the hardest for me, because I got stuck and could not figure out how the memory played into everything.
+
+So, to begin the instructions state that they fixed the locks to be harder to figure out this time.
+Immediatley I looked at main and found that it makes a call to enc, which in my head means encrypt.
+I look over there to see what will happen when I put a password in. Image 2-7 is me showing that. 
+Image 3-4 shows that something is occuring specifically at 247c, 
+but looking at the memory at that spot either time shows nothing there. 
+Image 5-7 is where the calls goes back to after everything that occurs. 
+At this point, I am confused. I know something is happening at 247c, but I dont see anything.
+I eventually looked at other's solutions to find out I needed to use a deamssembler to get through the memory.
+https://leonjza.github.io/blog/2018/03/06/microcorruption---reykjavik/ <-- was what I looked at to find that out.
+I quickly scroll through and see white which surprises me since the whole program is grey and green.
+I look at what they said there. It turns out that the memory is where the instructions I am looking for lie.
+Image 8 is showing the exact memory that has the instructions in it. 
+I go to a deassembler and see the instructions, as shown in Image 9.
+Image 10 is a comparision, which has normally meant something interesting is going on.
+Image 11-12 was me focusing more on the call function and working with that, but I did not get anywhere with that.
+I inputted the value that it was being compared to in Image 13. I forgot the endianess again.
+Image 14 was me correcting that and that was the key to unlock the door as shown in Image 15.
+
+

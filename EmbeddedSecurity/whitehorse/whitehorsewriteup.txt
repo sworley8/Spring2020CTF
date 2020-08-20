@@ -1,0 +1,16 @@
+Moving onto the next challenge, which for once has nothing intersting in Image 1.
+Here I got stuck again, but this time was because I did not read the manuel.
+Who knew there was a manuel?
+I used this solution to understand what I needed to do --> https://medium.com/bugbountywriteup/bypassing-electronic-locks-microcorruption-lv-5-8-df6d92f052b8
+
+So when I ran through the code intially I found some weird ascii in Image 2 at 3ac0, which I thought might be relevant. 
+Then I saw that when I inputted my password in Image 3, it had changed somewhat. I thought this would be important. 
+I tried the unlock door address to see if it would work in Image 4 and it did not as shown in Image 5. This is where I was stuck.
+
+Now if you look back at Image 2-3 you will see in r14 and r15 they are using 7e. In the manuel that I never read, it states that is the id for an interupt based on a condition and below that there is 7f which takes no conditions and works automatically. That is what I found out from the solution that I found. 
+Now knowing that information I could approach this problem. I tried to use 7f with 4644 but as shown in Image 6 it did not work. I had to look elsewhere.
+I decided wanted to go to 4532 which is where the interupt is at, but I did not want any conditionals at the interupt. 
+I know I'm asking alot, but I wanted to unlock the lock.
+I then inputted 4532 alot and 7f at the end with 4532 to indicate where to go, as shown in Image 7. 
+It worked and I moved on wihtout ever reading the manuel.
+

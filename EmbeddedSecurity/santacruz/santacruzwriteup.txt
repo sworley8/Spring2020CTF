@@ -1,0 +1,12 @@
+Next up is Santa Cruz skateboards.
+
+Looking at Image 1, we see that they reject passwords that are too long, which is fine.
+Now, we have usernames and password; both needing 8-16 characters. 
+Image 2 is when both username and password are 16 characters; Image 3-4 is when both are more. 
+As you can see the username is overwritten byt the password and the password is cut off if it is too long. 
+However, looking at Image 5, the return error is that the password is too short. 
+In Image 6, when the username is very long and the password is 1 character, 
+the return error is that the password is too long. This is odd.
+It took a bit of trial and error but I realized that there was 2 bits between the username and password, which you can see when comparing Image 2 and 3. That was the password buffer size.
+I decided to add 0199 to the end of the username at spot 18 and 19 to make the min and max of the password buffer to be that as shown in Image 7.
+Then I added 4442, which is the unlock door function is in this code. I showed what I put as username and password in Image 8 in the command line section.
